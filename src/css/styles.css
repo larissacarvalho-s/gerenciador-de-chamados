@@ -1,0 +1,144 @@
+*{
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+    margin:0;
+    background:#0f0f0f;
+    color:#fff;
+}
+
+.top-bar{
+    padding:20px;
+    background:#181818;
+    display:flex;
+    gap:15px;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.top-bar input{
+    padding:10px;
+    border:none;
+    border-radius:8px;
+    width:350px;
+}
+
+.top-bar button,
+.modal button{
+    padding:10px 15px;
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:#fff;
+    cursor:pointer;
+}
+
+.kanban{
+    display:flex;
+    gap:20px;
+    padding:20px;
+}
+
+.kanban-column{
+    background:#1b1b1b;
+    border-radius:12px;
+    padding:15px;
+    min-width:300px;
+    flex:1;
+}
+
+.kanban-cards{
+    min-height:500px;
+}
+
+.kanban-card{
+    background:#2a2a2a;
+    padding:15px;
+    border-radius:12px;
+    margin-bottom:10px;
+    cursor:move;
+}
+
+.kanban-card h3{
+    color:#60a5fa;
+}
+
+.kanban-card p{
+    margin:6px 0;
+    font-size:14px;
+}
+
+.badge{
+    display:inline-block;
+    padding:5px 10px;
+    border-radius:20px;
+    color:#fff;
+    font-size:12px;
+}
+
+.high{
+    background:#ef4444;
+}
+
+.medium{
+    background:#f59e0b;
+}
+
+.low{
+    background:#22c55e;
+}
+
+.cards-hover{
+    background:#333;
+}
+
+.modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.7);
+}
+
+.modal-content{
+    background:#222;
+    width:420px;
+    padding:25px;
+    border-radius:12px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.modal-content h2{
+    text-align:center;
+}
+
+.modal-content input,
+.modal-content select{
+    width:100%;
+    padding:10px;
+    margin-bottom:15px;
+    border-radius:8px;
+    border:none;
+    background:#2a2a2a;
+    color:#fff;
+}
+
+.btn-excluir{
+    width:100%;
+    margin-top:10px;
+    padding:8px;
+    border:none;
+    border-radius:8px;
+    background:#dc2626;
+    color:#fff;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.btn-excluir:hover{
+    background:#b91c1c;
+}

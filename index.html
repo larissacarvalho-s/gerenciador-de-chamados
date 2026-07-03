@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sistema de Chamados Help Desk</title>
+
+<link rel="stylesheet" href="src/css/styles.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header class="top-bar">
+
+<h1>Painel de Monitoramento de Chamados</h1>
+
+<input
+type="text"
+id="pesquisa"
+placeholder="Pesquisar protocolo, usuário ou problema">
+
+<button id="novoChamado">
++ Novo Chamado
+</button>
+
+</header>
+
+<main class="kanban">
+
+<div class="kanban-column">
+
+<div class="kanban-title">
+<h2>
+Aberto
+(<span id="count-aberto">0</span>)
+</h2>
+</div>
+
+<div
+class="kanban-cards"
+data-status="Aberto">
+</div>
+
+</div>
+
+<div class="kanban-column">
+
+<div class="kanban-title">
+<h2>
+Em Atendimento
+(<span id="count-atendimento">0</span>)
+</h2>
+</div>
+
+<div
+class="kanban-cards"
+data-status="Em Atendimento">
+</div>
+
+</div>
+
+<div class="kanban-column">
+
+<div class="kanban-title">
+<h2>
+Finalizado
+(<span id="count-finalizado">0</span>)
+</h2>
+</div>
+
+<div
+class="kanban-cards"
+data-status="Finalizado">
+</div>
+
+</div>
+
+</main>
+
+<div id="modal" class="modal">
+
+<div class="modal-content">
+
+<h2>Novo Chamado de Suporte</h2>
+
+<input
+id="usuario"
+placeholder="Nome do Usuário">
+
+<input
+id="problema"
+placeholder="Descrição do Problema">
+
+<select id="categoria">
+
+<option>Hardware</option>
+<option>Software</option>
+<option>Rede</option>
+<option>Acesso</option>
+
+</select>
+
+<input
+id="tecnico"
+placeholder="Técnico Responsável">
+
+<select id="prioridade">
+
+<option>Alta</option>
+<option>Média</option>
+<option>Baixa</option>
+
+</select>
+
+<button id="salvar">
+Salvar Chamado
+</button>
+
+</div>
+
+</div>
+
+<script src="src/javascript/script.js"></script>
+
+</body>
+</html>
